@@ -10,12 +10,12 @@ namespace ПР_06
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число:");
+            Console.Write("Введите число: ");
             double x = Convert.ToDouble(Console.ReadLine()); // Считываем число с клавиатуры
 
             double result = Math.Sin(x) + Math.Cos(x); // Вычисляем Sin(x) + Cos(x)
 
-            Console.Write("Результат вычислений: " + result); // Выводим результат на экран
+            Console.Write("Результат вычислений: " + $"{result:F2}"); // Выводим результат на экран
             Console.ReadKey();
         }
     }
